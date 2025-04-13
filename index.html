@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Circle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: #fff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #00d4ff;
+        }
+        main {
+            padding: 20px;
+        }
+        .profile-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .profile {
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .profile:hover {
+            transform: translateY(-10px);
+        }
+        .image-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Friendship Circle</h1>
+        <h2>Celebrating the bond of Sushant, Dharam Rakshit, Nihal, Aryan Goswami, Tanay, Saurabh,and Pritam</h2>
+        <nav>
+            <ul>
+                <li><a href="#profiles">Profiles</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#tracker">Friendship Tracker</a></li>
+                <li><a href="#games">Games & Polls</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="profiles">
+            <h2>Our Profiles</h2>
+            <div class="profile-container">
+                <div class="profile">
+                    <h3>Sushant</h3>
+                    <p>"Always there with a smile and wisdom!"</p>
+                </div>
+                <div class="profile">
+                    <h3>Dharam Rakshit</h3>
+                    <p>"Creativity and charm all in one."</p>
+                </div>
+                <div class="profile">
+                    <h3>Nihal</h3>
+                    <p>"Adventurous spirit and a kind heart."</p>
+                </div>
+                <div class="profile">
+                    <h3>Aryan Goswami</h3>
+                    <p>"Always ready for fun and deep talks."</p>
+                </div>
+                <div class="profile">
+                    <h3>Tanay</h3>
+                    <p>"Calm, composed, and full of surprises."</p>
+                </div>
+                <div class="profile">
+                    <h3>Saurabh</h3>
+                    <p>"Strength and humor that binds us together."</p>
+                </div>
+                <div class="profile">
+                    <h3>Pritam</h3>
+                    <p>"kind and sielent and full of fun."</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Shared Moments</h2>
+            <div class="image-container">
+                <img src="placeholder1.jpg" alt="Shared Memory 1">
+                <!--  -->
+            </div>
+        </section>
+
+        <section id="tracker">
+            <h2>Friendship Tracker</h2>
+            <p>Friendship anniversary: <strong>April 10, 2021</strong></p>
+            <p>Trips Taken: <strong>5 amazing trips</strong></p>
+        </section>
+
+        <section id="games">
+            <h2>Games & Polls</h2>
+            <button id="poll-button"> best fun!</button>
+            <p id="poll-result"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Friendship Circle. Bond stronger than ever!</p>
+    </footer>
+    <script>
+        const pollButton = document.getElementById('poll-button');
+        const pollResult = document.getElementById('poll-result');
+        pollButton.addEventListener('click', () => {
+            pollResult.innerText = "Best party: party on the last date of summer vacation!";
+        });
+    </script>
+</body>
+</html>
